@@ -70,7 +70,7 @@ public class SpelScriptEngineFactory implements ScriptEngineFactory {
 
 	@Override
 	public String getMethodCallSyntax(String obj, String method, String... args) {
-		String ret = obj + "." + method + "(";
+		String ret = "T(" + obj.getClass() + ")." + method + "(";
 		int len = args.length;
 		if (len == 0) {
 			ret += ")";
