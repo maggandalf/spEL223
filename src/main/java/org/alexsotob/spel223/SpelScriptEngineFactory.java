@@ -95,13 +95,7 @@ public class SpelScriptEngineFactory implements ScriptEngineFactory {
 
 	@Override
 	public String getProgram(String... statements) {
-		StringBuilder ret = new StringBuilder();
-		int len = statements.length;
-		for (int i = 0; i < len; i++) {
-			ret.append(statements[i]);
-			ret.append('\n');
-		}
-		return ret.toString();
+		throw new UnsupportedOperationException();
 	}
 
 	@Override
